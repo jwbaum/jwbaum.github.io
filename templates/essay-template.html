@@ -10,7 +10,8 @@
       background: #f7f4ec;
       color: #111;
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
+      line-height: 1.75;
+      font-size: 18.5px;
     }
 
     main {
@@ -19,8 +20,11 @@
       padding: 72px 22px 88px;
     }
 
+    /* LARGE SITE NAME (like homepage) */
     .site-name {
-      font-size: 1rem;
+      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
       margin-bottom: 2rem;
     }
 
@@ -29,18 +33,21 @@
       color: #111;
     }
 
+    /* Section link */
     .section {
       font-size: 0.95rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
+    /* Title */
     h1 {
-      font-size: clamp(2rem, 5vw, 2.4rem);
+      font-size: clamp(1.9rem, 4.5vw, 2.3rem);
       font-weight: normal;
       line-height: 1.2;
       margin-bottom: 0.25rem;
     }
 
+    /* Date */
     .date {
       font-size: 0.9rem;
       color: #666;
@@ -48,49 +55,74 @@
       display: block;
     }
 
+    /* Body text */
     p {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.3rem;
     }
 
     a {
       color: #111;
     }
 
+    /* Blockquote (book-like) */
     blockquote {
-      margin: 1.5rem 0;
+      margin: 1.6rem 0;
       padding-left: 1rem;
       border-left: 2px solid #ccc;
       color: #333;
       font-style: italic;
     }
 
+    /* Footer */
     .footer {
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #555;
+    }
+
+    /* Mobile refinement */
+    @media (max-width: 600px) {
+      body {
+        font-size: 17.5px;
+      }
+
+      main {
+        padding: 88px 24px 84px;
+      }
+
+      .site-name {
+        font-size: clamp(3rem, 12vw, 4rem);
+      }
     }
   </style>
 </head>
 <body>
   <main>
 
-    <p class="site-name"><a href="/">JW Baum</a></p>
+    <!-- Large identity -->
+    <div class="site-name">
+      <a href="/">JW Baum</a>
+    </div>
 
+    <!-- Section -->
     <p class="section"><a href="/writing/">Writing</a></p>
 
+    <!-- Title -->
     <h1>Your Essay Title</h1>
     <time class="date" datetime="2026-03-31">2026-03-31</time>
 
+    <!-- Body -->
     <p>Your opening paragraph...</p>
 
     <p>Another paragraph...</p>
 
     <blockquote>
-      This is a blockquote — great for quotes or emphasis.
+      This is a blockquote — great for quotes, scripture, or emphasis.
     </blockquote>
 
     <p>More writing...</p>
 
+    <!-- Footer -->
     <p class="footer">
       © 2026 JW Baum
     </p>
