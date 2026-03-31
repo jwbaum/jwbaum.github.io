@@ -20,9 +20,9 @@
       padding: 72px 22px 88px;
     }
 
-    /* LARGE SITE NAME (like homepage) */
+    /* LARGE SITE NAME (matches homepage exactly) */
     .site-name {
-      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      font-size: clamp(3rem, 9vw, 5.25rem);
       line-height: 1;
       letter-spacing: -0.03em;
       margin-bottom: 2rem;
@@ -64,13 +64,16 @@
       color: #111;
     }
 
-    /* Blockquote (book-like) */
+    /* Literary blockquote */
     blockquote {
-      margin: 1.6rem 0;
-      padding-left: 1rem;
-      border-left: 2px solid #ccc;
-      color: #333;
-      font-style: italic;
+      margin: 2.2rem 0;
+      padding-left: 1.5rem;
+      border-left: 1px solid #ccc;
+      color: #222;
+    }
+
+    blockquote p {
+      margin-bottom: 1.1rem;
     }
 
     /* Footer */
@@ -91,7 +94,11 @@
       }
 
       .site-name {
-        font-size: clamp(3rem, 12vw, 4rem);
+        font-size: clamp(3.2rem, 14vw, 4.6rem);
+      }
+
+      h1 {
+        font-size: clamp(1.7rem, 7vw, 2.1rem);
       }
     }
   </style>
@@ -117,7 +124,9 @@
     <p>Another paragraph...</p>
 
     <blockquote>
-      This is a blockquote — great for quotes, scripture, or emphasis.
+      <p>
+        This is a blockquote — great for quotes, scripture, or emphasis.
+      </p>
     </blockquote>
 
     <p>More writing...</p>
