@@ -11,7 +11,8 @@
       background: #f7f4ec;
       color: #111;
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
+      line-height: 1.75;
+      font-size: 18.5px;
     }
 
     main {
@@ -20,21 +21,20 @@
       padding: 72px 22px 88px;
     }
 
-    h1, h2 {
-      font-weight: normal;
-      line-height: 1.05;
-      margin: 0 0 0.75rem;
-    }
-
     h1 {
       font-size: clamp(3rem, 9vw, 5.25rem);
+      line-height: 1;
       letter-spacing: -0.03em;
       margin-bottom: 0.5rem;
+      margin-top: 0;
+      font-weight: normal;
     }
 
     h2 {
       font-size: 1.05rem;
       margin-top: 2.75rem;
+      margin-bottom: 0.75rem;
+      font-weight: normal;
     }
 
     p, li {
@@ -66,7 +66,12 @@
       margin-bottom: 0.6rem;
     }
 
+    /* Mobile refinement */
     @media (max-width: 600px) {
+      body {
+        font-size: 17.5px;
+      }
+
       main {
         max-width: 100%;
         padding: 88px 24px 84px;
@@ -74,7 +79,6 @@
 
       h1 {
         font-size: clamp(3.2rem, 14vw, 4.6rem);
-        line-height: 0.98;
       }
 
       .tagline {
@@ -87,10 +91,10 @@
 <body>
   <main>
     <h1>JW Baum</h1>
-    <p class="tagline">A compelling tagline here.</p>
+    <p class="tagline">Writer, reader, teacher.</p>
 
     <p>
-      Compelling description here.
+      Essays on books, reading, fatherhood, faith, and the life of the mind.
     </p>
 
     <nav>
